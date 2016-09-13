@@ -1,0 +1,52 @@
+
+<style scoped>
+	md-button-bar button md-icon[md-font-set] {
+		font-size: 24px;
+	}
+
+	md-button-bar .md-icon-button[disabled="disabled"] md-icon[md-font-set] {
+		color: rgba(0, 0, 0, 0.25);
+	}
+</style>
+
+<md-toolbar ng-class="$ctrl.options.class" ng-attr-md-whiteframe="{{ $ctrl.options.elevation || -1 }}">
+	<div class="md-toolbar-tools">
+		<span
+			class="md-title"
+			ng-class="$ctrl.options.title.class"
+			ng-style="$ctrl.options.title.style"
+			flex>
+			{{ $ctrl.options.title.text || $ctrl.options.title }}
+		</span>
+		<md-button
+			ng-class="button.class"
+			ng-repeat="button in $ctrl.options.buttons"
+			ng-style="button.style"
+			ng-disabled="button.enable === false"
+			ng-attr-aria-label="{{ button.label }}">
+			<md-tooltip
+				ng-if="button.tooltip"
+				ng-class="button.tooltip.class"
+				ng-attr-md-direction="{{ button.tooltip.direction }}"
+				ng-attr-md-delay="button.tooltip.delay || 0"
+				ng-style="button.tooltip.style">
+				{{ button.tooltip.text || button.tooltip }}
+			</md-tooltip>
+			<md-icon
+				ng-if="button.icon && !button.icon.svgIcon"
+				ng-class="button.icon.class"
+				ng-attr-md-font-set="{{ button.icon.fontSet }}"
+				ng-attr-md-font-icon="{{ button.icon.fontIcon }}"
+				ng-attr-md-svg-src="{{ button.icon.svgSrc }}"
+				ng-style="button.icon.style">
+			</md-icon>
+			<md-icon
+				ng-if="button.icon && button.icon.svgIcon"
+				ng-class="button.icon.class"
+				ng-attr-md-svg-icon="{{ button.icon.svgIcon }}"
+				ng-style="button.icon.style">
+			</md-icon>
+			<span ng-if="button.text">{{ button.text }}</span>
+		</md-button>
+	</div>
+</md-toolbar>

@@ -1,14 +1,14 @@
 {
   "name": "mdbuttonbar",
   "version": "1.0.0",
-  "description": "A highly configurable buttonbar for Angular-Material.",
+  "description": "A highly configurable button bar for Angular-Material.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pitxi/angular-material-components.git"
+    "url": "git+https://github.com/Pitxi/mdbuttonbar.git"
   },
   "keywords": [
     "angular",
@@ -18,9 +18,9 @@
   "author": "Javier Campón Pichardo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pitxi/angular-material-components/issues"
+    "url": "https://github.com/Pitxi/mdbuttonbar/issues"
   },
-  "homepage": "https://github.com/Pitxi/angular-material-components#readme",
+  "homepage": "https://github.com/Pitxi/mdbuttonbar#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^2.0.0",

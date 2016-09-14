@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pitxi/mdbuttonbar.git"
+    "url": "git+https://github.com/Pitxi/mdButtonBar.git"
   },
   "keywords": [
     "angular",
@@ -18,9 +18,9 @@
   "author": "Javier Campón Pichardo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Pitxi/mdbuttonbar/issues"
+    "url": "https://github.com/Pitxi/mdButtonBar/issues"
   },
-  "homepage": "https://github.com/Pitxi/mdbuttonbar#readme",
+  "homepage": "https://github.com/Pitxi/mdButtonBar#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^2.0.0",

@@ -1,5 +1,5 @@
 {
-  "name": "mdbuttonbar",
+  "name": "md-button-bar",
   "version": "1.0.0",
   "description": "A highly configurable button bar for Angular-Material.",
   "main": "index.js",

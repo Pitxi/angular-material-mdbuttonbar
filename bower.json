@@ -1,5 +1,5 @@
 {
-  "name": "mdbuttonbar",
+  "name": "mdButtonBar",
   "description": "A Highly configurable button bar for Angular-Material.",
   "main": "src/index.html",
   "keywords": [],
@@ -11,14 +11,12 @@
   "private": false,
   "ignore": [
     "**/.*",
+    "index.html",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
     "angular": "1.5.8",
-    "angular-material": "^1.1.1",
-    "font-awesome": "fontawesome#^4.6.3"
+    "angular-material": "^1.1.1"
   }
 }

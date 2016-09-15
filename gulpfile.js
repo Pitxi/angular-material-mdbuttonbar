@@ -15,7 +15,7 @@
 	del           = require('del');
 
 	gulp.task('clean:dist', function() {
-		return del(['dist']);
+		return del('dist');
 	});
 
 	gulp.task('clean:temp', function() {
@@ -36,7 +36,9 @@
 			.pipe(gulp.dest('dist'));
 	});
 
-	gulp.task('build', [ 'concat:templates', 'clean:temp' ], function() {
+	gulp.task('build', [ 'concat:templates' ], function() {
+		del('temp');
+
 		return gulp.src('dist/' + moduleName + '.js')
 			.pipe(sourcemaps.init())
 				.pipe(uglify({ preserveComments: 'license' }))

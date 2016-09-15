@@ -12,6 +12,7 @@
 			buttons: [
 				{
 					name: 'addButton',
+					enable: false,
 					class: 'md-icon-button md-raised',
 					icon: { fontSet: 'fa', fontIcon: 'fa-plus', style: { color: 'green' } },
 					tooltip: 'Añadir'

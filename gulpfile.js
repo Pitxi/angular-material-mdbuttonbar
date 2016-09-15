@@ -31,7 +31,7 @@
 	});
 
 	gulp.task('concat:templates', [ 'build:templates' ], function() {
-		return gulp.src(['src/js/mdButtonBar.js', 'temp/templatesCache.js'])
+		return gulp.src(['src/js/' + moduleName + '.js', 'temp/templatesCache.js'])
 			.pipe(concat(moduleName + '.js'))
 			.pipe(gulp.dest('dist'));
 	});

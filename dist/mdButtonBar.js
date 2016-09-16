@@ -20,10 +20,8 @@
 		})
 		.controller('mdButtonBarCtrl', mdButtonBarCtrl);
 
-		function mdButtonBarCtrl($scope, $element, $attrs)
+		function mdButtonBarCtrl()
 		{
-			console.log($element);
-
 			this.$onInit = function () {
 				if (!this.options) {
 					this.options = {};

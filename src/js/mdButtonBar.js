@@ -20,7 +20,8 @@
 		})
 		.controller('mdButtonBarCtrl', mdButtonBarCtrl);
 
-		function mdButtonBarCtrl()
+		mdButtonBarCtrl.$inject = [ '$scope', '$element', '$attrs' ];
+		function mdButtonBarCtrl($scope, $element, $attrs)
 		{
 			this.$onInit = function () {
 				if (!this.options) {

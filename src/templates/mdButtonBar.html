@@ -16,6 +16,7 @@
 	ng-disabled="button.enable === false"
 	ng-attr-aria-label="{{ button.label }}"
 	ng-attr-ng-roles="{{ button.roles }}"
+	ng-attr-ng-roles-comparer="{{ button.rolesComparer }}"
 	ng-click="$ctrl.onButtonClick({ button: button })">
 	<md-tooltip
 		ng-if="button.tooltip"

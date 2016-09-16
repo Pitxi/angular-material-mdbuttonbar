@@ -15,8 +15,7 @@
 					enable: true,
 					class: 'md-icon-button md-raised',
 					icon: { fontSet: 'fa', fontIcon: 'fa-plus', style: { color: 'green' } },
-					tooltip: 'Añadir',
-					roles: 'user userManager'
+					tooltip: 'Añadir'
 				}
 			]
 		}

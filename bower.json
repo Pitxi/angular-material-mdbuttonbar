@@ -1,7 +1,6 @@
 {
   "name": "md-button-bar",
   "description": "A Highly configurable button bar for Angular-Material.",
-  "main": "src/index.html",
   "keywords": [],
   "authors": [
     "Javier Campón Pichardo"

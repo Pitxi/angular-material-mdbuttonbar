@@ -6,19 +6,30 @@
  *
  * Barra de botones configurable.
  */
-(function () { 'use strict';
+(function () {
+	'use strict';
+
 	angular.module('mdButtonBar', [ 'ngAria', 'ngAnimate', 'ngMaterial' ])
 		.component('mdButtonBar' ,{
 			controller: 'mdButtonBarCtrl',
 			templateUrl: '/templates/mdButtonBar.html',
 			bindings: {
-				options: '<'
+				options: '<',
+				onButtonClick: '&'
 			}
 		})
 		.controller('mdButtonBarCtrl', mdButtonBarCtrl);
 
 		function mdButtonBarCtrl()
 		{
-			//TODO: Inicializar y establecer valores por defecto.
+			this.$onInit = function () {
+				if (!this.options) {
+					this.options = {};
+				}
+
+				if (!this.options.buttons) {
+					this.options.buttons = [];
+				}
+			}
 		}
 })();

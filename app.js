@@ -12,12 +12,17 @@
 			buttons: [
 				{
 					name: 'addButton',
-					enable: false,
+					enable: true,
 					class: 'md-icon-button md-raised',
 					icon: { fontSet: 'fa', fontIcon: 'fa-plus', style: { color: 'green' } },
-					tooltip: 'Añadir'
+					tooltip: 'Añadir',
+					roles: 'user userManager'
 				}
 			]
+		}
+
+		$scope.onButtonClick = function(button) {
+			alert('Has pulsado el botón: ' + button.name);
 		}
 	}
 })();

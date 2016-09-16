@@ -14,7 +14,9 @@
 	ng-repeat="button in $ctrl.options.buttons"
 	ng-style="button.style"
 	ng-disabled="button.enable === false"
-	ng-attr-aria-label="{{ button.label }}">
+	ng-attr-aria-label="{{ button.label }}"
+	ng-attr-ng-roles="{{ button.roles }}"
+	ng-click="$ctrl.onButtonClick({ button: button })">
 	<md-tooltip
 		ng-if="button.tooltip"
 		ng-class="button.tooltip.class"

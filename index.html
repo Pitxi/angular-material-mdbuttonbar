@@ -16,7 +16,11 @@
 	</head>
 	<body>
 		<md-toolbar ng-controller="testCtrl" md-whiteframe="2" layout="row">
-			<md-button-bar class="md-toolbar-tools" layout-align="end center" options="buttonBarOptions"></md-button-bar>
+			<md-button-bar
+				class="md-toolbar-tools"
+				layout-align="end center"
+				options="buttonBarOptions"
+				on-button-click="onButtonClick(button)"></md-button-bar>
 		</md-toolbar>
 	</body>
 </html>

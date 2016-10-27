@@ -15,12 +15,12 @@
 		<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
 	</head>
 	<body>
-		<md-toolbar ng-controller="testCtrl" md-whiteframe="2" layout="row">
+		<md-toolbar ng-controller="testCtrl as Test" md-whiteframe="2" layout="row">
 			<md-button-bar
 				class="md-toolbar-tools"
 				layout-align="end center"
-				options="buttonBarOptions"
-				on-button-click="onButtonClick(button)"></md-button-bar>
+				options="Test.buttonBarOptions"
+				on-button-click="Test.onButtonClick(button)"></md-button-bar>
 		</md-toolbar>
 	</body>
 </html>

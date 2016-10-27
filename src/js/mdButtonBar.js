@@ -36,7 +36,7 @@
 						this.options.buttons[index].enable = true;
 					}
 				}
-			}
+			};
 
 			/**
 			 * Habilita o inhabilita un botón atendiendo a su propiedad @c enable
@@ -47,6 +47,6 @@
 				var enableProperty = this.options.buttons[index].enable;
 
 				return angular.isFunction(enableProperty) ? enableProperty() : !!enableProperty;
-			}
+			};
 		}
 })();

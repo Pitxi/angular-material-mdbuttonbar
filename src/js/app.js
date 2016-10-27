@@ -5,7 +5,7 @@
 	angular.module('test', [ 'mdButtonBar' ])
 	.controller('testCtrl', testCtrl);
 
-	function testCtrl($scope)
+	function testCtrl()
 	{
 		var ctrl = this;
 

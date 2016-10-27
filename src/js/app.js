@@ -30,7 +30,7 @@
 					}
 				}
 			]
-		}
+		};
 
 		ctrl.onButtonClick = function(button) {
 			switch (button.name) {
@@ -41,6 +41,6 @@
 					ctrl.enable = !ctrl.enable;
 					break;
 			}
-		}
+		};
 	}
 })();

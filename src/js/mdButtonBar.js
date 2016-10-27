@@ -1,14 +1,13 @@
 /**
- * Proyecto Auditoría Interna
  * @authors Javier Campón Pichardo
  * @date 25/7/2016
- * @copyright Copyright (c) 2016 Junta Central Electoral de la República Dominicana. Todos los derechos reservados.
- *
- * Barra de botones configurable.
  */
 (function () {
 	'use strict';
 
+	/**
+	 * Barra de botones configurable.
+	 */
 	angular.module('mdButtonBar', [ 'ngAria', 'ngAnimate', 'ngMaterial' ])
 		.component('mdButtonBar' ,{
 			controller: 'mdButtonBarCtrl',

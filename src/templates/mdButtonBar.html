@@ -13,7 +13,7 @@
 	ng-class="button.class"
 	ng-repeat="button in $ctrl.options.buttons"
 	ng-style="button.style"
-	ng-disabled="button.enable === false"
+	ng-disabled="!$ctrl.isButtonEnabled($index)"
 	ng-attr-aria-label="{{ button.label }}"
 	ng-attr-ng-roles="{{ button.roles }}"
 	ng-attr-ng-roles-comparer="{{ button.rolesComparer }}"

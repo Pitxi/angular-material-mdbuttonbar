@@ -11,10 +11,10 @@
 		$scope.buttonBarOptions = {
 			buttons: [
 				{
-					name: 'addButton',
-					enable: true,
-					class: 'md-icon-button md-raised',
-					icon: { fontSet: 'fa', fontIcon: 'fa-plus', style: { color: 'green' } },
+					name   : 'addButton',
+					enable : function() { return true; },
+					class  : 'md-icon-button md-raised',
+					icon   : { fontSet: 'fa', fontIcon: 'fa-plus', style: { color: 'green' } },
 					tooltip: 'Añadir'
 				}
 			]
